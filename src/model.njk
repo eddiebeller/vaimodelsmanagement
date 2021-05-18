@@ -1,0 +1,27 @@
+---
+layout: models.njk
+pagination:
+  data: models
+  size: 1
+  alias: data
+permalink: 'models/{{ data.name | slug }}/'
+---
+
+<div class="model-card__container">
+	<h4 class="model-card__subheading">Portfolio</h4>
+	<h2 class="model-card__heading">{{ data.name }}</h2>
+	<div class="model-card__params">
+		<p>Height {{ data.height }},</p>
+		<p>Bust {{ data.bust }},</p>
+		<p>Waist {{ data.waist }},</p>
+		<p>Hip {{ data.hip }},</p>
+		<p>Shoe {{ data.shoe }},</p>
+		<p>Hair {{ data.hair }},</p>
+		<p>Eyes {{ data.eyes }},</p>
+	</div>
+</div>
+
+<div>carusel here</div>
+
+<!-- carusel here -->
+<!-- <img src="assets/models/{{ data.name }}/{{ data.photos[i] }}.jpg" alt="" /> -->

@@ -1,0 +1,5 @@
+@use '../abstracts/mixins' as *;
+.home__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(19.83rem, 1fr));
+}

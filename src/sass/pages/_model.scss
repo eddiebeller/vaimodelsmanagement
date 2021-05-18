@@ -1,0 +1,38 @@
+.model-card {
+	&__container {
+		display: flex;
+		margin-top: 2.2em;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__subheading {
+		margin: 0;
+		font-style: normal;
+		font-weight: bold;
+		font-size: var(--fz-default);
+		line-height: 1;
+		text-transform: uppercase;
+	}
+	&__heading {
+		margin: 0;
+		font-style: normal;
+		font-weight: bold;
+		font-size: var(--fz-large);
+		line-height: 0.8;
+	}
+	&__params {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5em;
+		margin-top: 1.1em;
+		p {
+			font-size: var(--fz-medium-large);
+			text-transform: uppercase;
+			font-weight: 300;
+			margin: 0;
+		}
+	}
+}
