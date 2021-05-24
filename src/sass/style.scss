@@ -8,5 +8,9 @@
 @use 'layouts/grid';
 
 @use 'components/item';
+@use 'components/mobile-navigation';
+@use 'components/_heading';
 
 @use 'pages/model';
+@use 'pages/about';
+@use 'pages/be-model';

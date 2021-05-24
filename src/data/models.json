@@ -10,7 +10,7 @@
 		"shoe": 40,
 		"hair": "red",
 		"eyes": "brown",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Sofi",
@@ -23,7 +23,7 @@
 		"shoe": 40,
 		"hair": "brown",
 		"eyes": "brown",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Dali",
@@ -36,7 +36,7 @@
 		"shoe": 37,
 		"hair": "brown",
 		"eyes": "blue",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Poli",
@@ -49,7 +49,7 @@
 		"shoe": 39,
 		"hair": "light brown",
 		"eyes": "blue",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Ginger",
@@ -62,7 +62,7 @@
 		"shoe": 37,
 		"hair": "red",
 		"eyes": "blue",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Lisa",
@@ -75,7 +75,7 @@
 		"shoe": 37,
 		"hair": "brown",
 		"eyes": "brown",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Anastasia",
@@ -88,7 +88,7 @@
 		"shoe": 40,
 		"hair": "brown",
 		"eyes": "blue",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Bambi",
@@ -101,7 +101,7 @@
 		"shoe": 38,
 		"hair": "brown",
 		"eyes": "brown",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Kati",
@@ -114,7 +114,7 @@
 		"shoe": 38,
 		"hair": "brown",
 		"eyes": "brown",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Viktoria",
@@ -127,7 +127,7 @@
 		"shoe": 38,
 		"hair": "brown",
 		"eyes": "brown",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Vic",
@@ -140,7 +140,7 @@
 		"shoe": 39,
 		"hair": "blond",
 		"eyes": "blue",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Veronika",
@@ -153,7 +153,7 @@
 		"shoe": 39,
 		"hair": "brown",
 		"eyes": "blue",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Daria",
@@ -166,7 +166,7 @@
 		"shoe": 37,
 		"hair": "brown",
 		"eyes": "brown",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Rina",
@@ -179,7 +179,7 @@
 		"shoe": 38,
 		"hair": "blond",
 		"eyes": "brown",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Vesta",
@@ -192,7 +192,7 @@
 		"shoe": 39,
 		"hair": "brown",
 		"eyes": "grey",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Darya",
@@ -205,7 +205,7 @@
 		"shoe": 39,
 		"hair": "brown",
 		"eyes": "blue",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Diana",
@@ -218,7 +218,7 @@
 		"shoe": 39,
 		"hair": "brown",
 		"eyes": "brown",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Polina",
@@ -231,7 +231,7 @@
 		"shoe": 39,
 		"hair": "brown",
 		"eyes": "brown",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Lidia",
@@ -244,7 +244,7 @@
 		"shoe": 39,
 		"hair": "blond",
 		"eyes": "brown",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Evgenia",
@@ -257,7 +257,7 @@
 		"shoe": 40,
 		"hair": "brown",
 		"eyes": "hazel",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Lina",
@@ -270,7 +270,7 @@
 		"shoe": 38,
 		"hair": "brown",
 		"eyes": "green",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Dima",
@@ -283,7 +283,7 @@
 		"shoe": 45,
 		"hair": "brown",
 		"eyes": "grey",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Nikita",
@@ -296,7 +296,7 @@
 		"shoe": 45,
 		"hair": "brown",
 		"eyes": "blue",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "Iri Barsik",
@@ -309,7 +309,7 @@
 		"shoe": 38,
 		"hair": "brown",
 		"eyes": "blue",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	},
 	{
 		"name": "VaRya",
@@ -322,6 +322,6 @@
 		"shoe": 40,
 		"hair": "blond",
 		"eyes": "blue",
-		"photos": ["1", "2"]
+		"photos": ["1", "2", "3", "4", "5", "6"]
 	}
 ]

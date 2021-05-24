@@ -16,16 +16,17 @@ async function imageShortcode(src, alt, sizes = '100vw') {
 
 	let lowsrc = metadata.jpeg[0];
 
-	return `<picture>
-    ${Object.values(metadata)
-			.map((imageFormat) => {
-				return `  <source type="${
-					imageFormat[0].sourceType
-				}" srcset="${imageFormat
+	return `
+		<picture>
+    	${Object.values(metadata)
+				.map((imageFormat) => {
+					return `
+				<source type="${imageFormat[0].sourceType}"
+				srcset="${imageFormat
 					.map((entry) => entry.srcset)
 					.join(', ')}" sizes="${sizes}">`;
-			})
-			.join('\n')}
+				})
+				.join('\n')}
       <img
         src="${lowsrc.url}"
         width="${lowsrc.width}"
@@ -40,10 +41,23 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addWatchTarget('./src/sass/');
 	eleventyConfig.addPassthroughCopy('src/assets');
+	eleventyConfig.addPassthroughCopy('src/scripts');
 
 	eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
 	eleventyConfig.addLiquidShortcode('image', imageShortcode);
 	eleventyConfig.addJavaScriptFunction('image', imageShortcode);
+
+	//slick carusel
+
+	eleventyConfig.addPassthroughCopy({
+		'node_modules/slick-carousel/slick/slick.min.js': 'scripts/slick.min.js',
+	});
+	eleventyConfig.addPassthroughCopy({
+		'node_modules/jquery/dist/jquery.min.js': 'scripts/jquery.min.js',
+	});
+	eleventyConfig.addPassthroughCopy({
+		'node_modules/slick-carousel/slick/slick.css': 'css/slick.css',
+	});
 
 	return {
 		dir: {

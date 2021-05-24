@@ -17,11 +17,14 @@ permalink: 'models/{{ data.name | slug }}/'
 		<p>Hip {{ data.hip }},</p>
 		<p>Shoe {{ data.shoe }},</p>
 		<p>Hair {{ data.hair }},</p>
-		<p>Eyes {{ data.eyes }},</p>
+		<p>Eyes {{ data.eyes }}</p>
+	</div>
+	<div class="carusel init">
+		{% for photo in data.photos %}
+		<img
+			src="{{ '../../' | url }}assets/models/{{ data.name }}/{{ photo }}.jpg"
+			alt="model picture"
+		/>
+		{% endfor %}
 	</div>
 </div>
-
-<div>carusel here</div>
-
-<!-- carusel here -->
-<!-- <img src="assets/models/{{ data.name }}/{{ data.photos[i] }}.jpg" alt="" /> -->

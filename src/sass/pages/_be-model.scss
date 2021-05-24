@@ -1,0 +1,46 @@
+.be-model {
+	position: relative;
+	background: url(../assets/be-model.jpg) no-repeat center center;
+	background-color: #dddddd;
+	background-size: cover;
+	background-attachment: fixed;
+	&__heading {
+		font-size: var(--fz-large);
+		font-style: normal;
+		font-weight: normal;
+		margin-bottom: 0.35em;
+		margin-top: 0;
+		margin-bottom: 60px;
+		line-height: 68px;
+		text-align: center;
+	}
+	&__requirements,
+	&__info {
+		margin-bottom: 1em;
+		align-self: flex-start;
+		p {
+			font-size: var(--fz-small);
+			line-height: 21px;
+			margin: 0;
+		}
+		a {
+			color: var(--clr-primary-black);
+			font-size: var(--fz-small);
+			transition: 250ms ease;
+			&:focus,
+			&:hover {
+				text-decoration: underline;
+				color: var(--clr-primary-white);
+			}
+		}
+		ul {
+			list-style: disc;
+			margin: 1em 0 1em 1.125em;
+			li {
+				font-size: var(--fz-small);
+				line-height: 21px;
+				margin: 0;
+			}
+		}
+	}
+}

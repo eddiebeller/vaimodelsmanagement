@@ -1,7 +1,10 @@
+@use '../abstracts/mixins' as *;
+
 .model-card {
 	&__container {
 		display: flex;
-		margin-top: 2.2em;
+		padding-top: 2.2em;
+		padding-bottom: 4.375em;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -33,6 +36,30 @@
 			text-transform: uppercase;
 			font-weight: 300;
 			margin: 0;
+		}
+	}
+	.carusel {
+		max-width: 1520px;
+		margin: 0 auto;
+		visibility: hidden;
+		&.slick-initialized {
+			visibility: visible;
+		}
+		.slick-slide {
+			margin: 0px 20px;
+			height: 600px;
+			// aspect-ratio: 1 / 1;
+			// width: 100%;
+			// object-fit: contain;
+		}
+		.slick-track {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.slick-prev:before,
+		.slick-next:before {
+			color: black;
 		}
 	}
 }

@@ -6,14 +6,24 @@
 	align-items: center;
 	padding: 0 5.556em;
 	background: var(--clr-primary-black);
-
+	@include mq(sm) {
+		min-height: 3rem;
+		padding: 0 30px;
+	}
+	@include mq(xs) {
+		grid-template-columns: 1fr;
+		min-height: 60px;
+	}
 	&__copy {
 		p {
 			color: var(--clr-primary-white);
 			font-size: var(--fz-small);
-			@include mq(lg) {
-				font-size: 1rem;
+			@include mq(md) {
+				font-size: 0.625em;
 			}
+		}
+		@include mq(xs) {
+			justify-self: center;
 		}
 	}
 	&__contacts {
@@ -21,17 +31,30 @@
 		justify-content: flex-end;
 		align-items: center;
 		gap: 4.611em;
+		@include mq(lg) {
+			gap: 3rem;
+		}
+		@include mq(md) {
+			gap: 2rem;
+		}
+		@include mq(xs) {
+			display: none;
+		}
 	}
 	li {
 		line-height: 0;
 	}
 	.email {
 		a {
-			font-size: var(--fz-medium);
+			font-size: var(--fz-small);
 			text-transform: uppercase;
 			font-weight: normal;
-			@include mq(lg) {
-				font-size: 1rem;
+			@include mq(md) {
+				font-size: 0.625em;
+			}
+			&:focus,
+			&:hover {
+				text-decoration: underline;
 			}
 		}
 	}
@@ -40,5 +63,11 @@
 		align-items: center;
 		justify-content: flex-end;
 		gap: 2.556em;
+		@include mq(lg) {
+			gap: 2.5rem;
+		}
+		@include mq(md) {
+			gap: 1.25rem;
+		}
 	}
 }
