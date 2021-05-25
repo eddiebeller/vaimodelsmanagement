@@ -24,6 +24,7 @@ permalink: 'models/{{ data.name | slug }}/'
 		<img
 			src="{{ '../../' | url }}assets/models/{{ data.name }}/{{ photo }}.jpg"
 			alt="model picture"
+			loading="lazy"
 		/>
 		{% endfor %}
 	</div>
