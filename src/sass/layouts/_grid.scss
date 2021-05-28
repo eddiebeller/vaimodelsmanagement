@@ -12,10 +12,10 @@
 	grid-template-rows: 3.75rem 1fr 3.75rem;
 	grid-template-areas: 'header' 'content' 'footer';
 	@include mq(sm) {
-		grid-template-rows: 3rem auto 3rem;
+		grid-template-rows: 3rem 1fr 3rem;
 	}
 	@include mq(xs) {
-		grid-template-rows: 3.75rem auto 3.75rem;
+		grid-template-rows: 3.75rem 1fr 3.75rem;
 	}
 	header {
 		grid-area: header;

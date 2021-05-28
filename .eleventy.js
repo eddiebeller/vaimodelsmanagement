@@ -8,10 +8,10 @@ async function imageShortcode(src, alt, sizes = '100vw') {
 	}
 
 	let metadata = await Image(src, {
-		widths: [300, 600],
+		widths: [null],
 		formats: ['webp', 'jpeg', 'avif'],
-		urlPath: './src/assets/',
-		outputDir: './src/assets/',
+		urlPath: '../../assets/home/generated',
+		outputDir: './src/assets/home/generated',
 	});
 
 	let lowsrc = metadata.jpeg[0];
@@ -22,9 +22,9 @@ async function imageShortcode(src, alt, sizes = '100vw') {
 				.map((imageFormat) => {
 					return `
 				<source type="${imageFormat[0].sourceType}"
-				srcset="${imageFormat
-					.map((entry) => entry.srcset)
-					.join(', ')}" sizes="${sizes}">`;
+					srcset="${imageFormat
+						.map((entry) => entry.srcset)
+						.join(', ')}" sizes="${sizes}">`;
 				})
 				.join('\n')}
       <img
@@ -40,9 +40,12 @@ async function imageShortcode(src, alt, sizes = '100vw') {
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addWatchTarget('./src/sass/');
+
+	// copy
 	eleventyConfig.addPassthroughCopy('src/assets');
 	eleventyConfig.addPassthroughCopy('src/scripts');
 
+	// image plugin
 	eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
 	eleventyConfig.addLiquidShortcode('image', imageShortcode);
 	eleventyConfig.addJavaScriptFunction('image', imageShortcode);

@@ -1,7 +1,8 @@
 [
 	{
 		"name": "Vlada",
-		"image": "assets/home/1-Vlada.jpg",
+		"image": "src/assets/home/1-Vlada.jpg",
+		"imageBig": "src/assets/home/1-Vlada2x.jpg",
 		"url": "/models/vlada",
 		"height": 177,
 		"bust": 76,
@@ -48,7 +49,8 @@
 	},
 	{
 		"name": "Sofi",
-		"image": "assets/home/2-Sofi.jpg",
+		"image": "src/assets/home/2-Sofi.jpg",
+		"imageBig": "src/assets/home/2-Sofi2x.jpg",
 		"url": "/models/sofi",
 		"height": 179,
 		"bust": 81,
@@ -94,7 +96,8 @@
 	},
 	{
 		"name": "Dali",
-		"image": "assets/home/3-Dali.jpg",
+		"image": "src/assets/home/3-Dali.jpg",
+		"imageBig": "src/assets/home/3-Dali2x.jpg",
 		"url": "/models/dali",
 		"height": 173,
 		"bust": 74,
@@ -134,7 +137,8 @@
 	},
 	{
 		"name": "Poli",
-		"image": "assets/home/4-Poli.jpg",
+		"image": "src/assets/home/4-Poli.jpg",
+		"imageBig": "src/assets/home/4-Poli2x.jpg",
 		"url": "/models/poli",
 		"height": 175,
 		"bust": 84,
@@ -176,7 +180,8 @@
 	},
 	{
 		"name": "Ginger",
-		"image": "assets/home/5-Ginger.jpg",
+		"image": "src/assets/home/5-Ginger.jpg",
+		"imageBig": "src/assets/home/5-Ginger2x.jpg",
 		"url": "/models/ginger",
 		"height": 170,
 		"bust": 76,
@@ -220,7 +225,8 @@
 	},
 	{
 		"name": "Lisa",
-		"image": "assets/home/6-Lisa.jpg",
+		"image": "src/assets/home/6-Lisa.jpg",
+		"imageBig": "src/assets/home/6-Lisa2x.jpg",
 		"url": "/models/lisa",
 		"height": 170,
 		"bust": 83,
@@ -254,7 +260,8 @@
 	},
 	{
 		"name": "Anastasia",
-		"image": "assets/home/7-Anastasia.jpg",
+		"image": "src/assets/home/7-Anastasia.jpg",
+		"imageBig": "src/assets/home/7-Anastasia2x.jpg",
 		"url": "/models/anastasia",
 		"height": 177,
 		"bust": 84,
@@ -267,7 +274,8 @@
 	},
 	{
 		"name": "Bambi",
-		"image": "assets/home/8-Bambi.jpg",
+		"image": "src/assets/home/8-Bambi.jpg",
+		"imageBig": "src/assets/home/8-Bambi2x.jpg",
 		"url": "/models/bambi",
 		"height": 173,
 		"bust": 79,
@@ -299,7 +307,8 @@
 	},
 	{
 		"name": "Kati",
-		"image": "assets/home/9-Kati.jpg",
+		"image": "src/assets/home/9-Kati.jpg",
+		"imageBig": "src/assets/home/9-Kati2x.jpg",
 		"url": "/models/kati",
 		"height": 170,
 		"bust": 78,
@@ -312,7 +321,8 @@
 	},
 	{
 		"name": "Viktoria",
-		"image": "assets/home/10-Viktoria.jpg",
+		"image": "src/assets/home/10-Viktoria.jpg",
+		"imageBig": "src/assets/home/10-Viktoria2x.jpg",
 		"url": "/models/viktoria",
 		"height": 177,
 		"bust": 81,
@@ -341,7 +351,8 @@
 	},
 	{
 		"name": "Vic",
-		"image": "assets/home/11-Vic.jpg",
+		"image": "src/assets/home/11-Vic.jpg",
+		"imageBig": "src/assets/home/11-Vic2x.jpg",
 		"url": "/models/vic",
 		"height": 173,
 		"bust": 88,
@@ -378,7 +389,8 @@
 	},
 	{
 		"name": "Veronica",
-		"image": "assets/home/12-Veronika.jpg",
+		"image": "src/assets/home/12-Veronika.jpg",
+		"imageBig": "src/assets/home/12-Veronika2x.jpg",
 		"url": "/models/veronica",
 		"height": 181,
 		"bust": 84,
@@ -391,7 +403,8 @@
 	},
 	{
 		"name": "Daria R",
-		"image": "assets/home/13-Daria.jpg",
+		"image": "src/assets/home/13-DariaR.jpg",
+		"imageBig": "src/assets/home/13-DariaR2x.jpg",
 		"url": "/models/daria-r",
 		"height": 172,
 		"bust": 84,
@@ -425,7 +438,8 @@
 	},
 	{
 		"name": "Rina",
-		"image": "assets/home/14-Rina.jpg",
+		"image": "src/assets/home/14-Rina.jpg",
+		"imageBig": "src/assets/home/14-Rina2x.jpg",
 		"url": "/models/rina",
 		"height": 173,
 		"bust": 81,
@@ -455,7 +469,8 @@
 	},
 	{
 		"name": "Vesta",
-		"image": "assets/home/15-Vesta.jpg",
+		"image": "src/assets/home/15-Vesta.jpg",
+		"imageBig": "src/assets/home/15-Vesta2x.jpg",
 		"url": "/models/vesta",
 		"height": 177,
 		"bust": 82,
@@ -490,7 +505,8 @@
 	},
 	{
 		"name": "Daria",
-		"image": "assets/home/16-Darya.jpg",
+		"image": "src/assets/home/16-Daria.jpg",
+		"imageBig": "src/assets/home/16-Daria2x.jpg",
 		"url": "/models/daria",
 		"height": 172,
 		"bust": 80,
@@ -503,7 +519,8 @@
 	},
 	{
 		"name": "Diana",
-		"image": "assets/home/17-Diana.jpg",
+		"image": "src/assets/home/17-Diana.jpg",
+		"imageBig": "src/assets/home/17-Diana2x.jpg",
 		"url": "/models/diana",
 		"height": 176,
 		"bust": 84,
@@ -539,7 +556,8 @@
 	},
 	{
 		"name": "Polina",
-		"image": "assets/home/18-Polina.jpg",
+		"image": "src/assets/home/18-Polina.jpg",
+		"imageBig": "src/assets/home/18-Polina2x.jpg",
 		"url": "/models/polina",
 		"height": 176,
 		"bust": 84,
@@ -566,7 +584,8 @@
 	},
 	{
 		"name": "Lidia",
-		"image": "assets/home/19-Lidia.jpg",
+		"image": "src/assets/home/19-Lidia.jpg",
+		"imageBig": "src/assets/home/19-Lidia2x.jpg",
 		"url": "/models/lidia",
 		"height": 177,
 		"bust": 81,
@@ -599,7 +618,8 @@
 	},
 	{
 		"name": "Evgenia",
-		"image": "assets/home/20-Evgenia.jpg",
+		"image": "src/assets/home/20-Evgenia.jpg",
+		"imageBig": "src/assets/home/20-Evgenia2x.jpg",
 		"url": "/models/evgenia",
 		"height": 181,
 		"bust": 90,
@@ -612,7 +632,8 @@
 	},
 	{
 		"name": "Lina",
-		"image": "assets/home/21-Lina.jpg",
+		"image": "src/assets/home/21-Lina.jpg",
+		"imageBig": "src/assets/home/21-Lina2x.jpg",
 		"url": "/models/lina",
 		"height": 176,
 		"bust": 86,
@@ -625,7 +646,8 @@
 	},
 	{
 		"name": "Dima",
-		"image": "assets/home/22-Dima.jpg",
+		"image": "src/assets/home/22-Dima.jpg",
+		"imageBig": "src/assets/home/22-Dima2x.jpg",
 		"url": "/models/dima",
 		"height": 187,
 		"bust": 92,
@@ -638,7 +660,8 @@
 	},
 	{
 		"name": "Nikita",
-		"image": "assets/home/23-Nikita.jpg",
+		"image": "src/assets/home/23-Nikita.jpg",
+		"imageBig": "src/assets/home/23-Nikita2x.jpg",
 		"url": "/models/nikita",
 		"height": 190,
 		"bust": 96,
@@ -651,7 +674,8 @@
 	},
 	{
 		"name": "Iri Barsik",
-		"image": "assets/home/24-Iri-Barsik.jpg",
+		"image": "src/assets/home/24-Iri-Barsik.jpg",
+		"imageBig": "src/assets/home/24-Iri-Barsik2x.jpg",
 		"url": "/models/iri-barsik",
 		"height": 178,
 		"bust": 84,
@@ -688,7 +712,8 @@
 	},
 	{
 		"name": "VaRya",
-		"image": "assets/home/25-VaRya.jpg",
+		"image": "src/assets/home/25-VaRya.jpg",
+		"imageBig": "src/assets/home/25-VaRya2x.jpg",
 		"url": "/models/varya",
 		"height": 178,
 		"bust": 81,

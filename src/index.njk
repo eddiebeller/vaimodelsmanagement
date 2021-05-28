@@ -8,13 +8,11 @@ eleventyNavigation:
 
 <div class="home__grid">
 	{% for model in models %}
-	<div class="item">
-		<a href="{{ model.url }}">
-			<img src="{{ model.image }}" alt="model picture" loading="lazy" />
-		</a>
+	<figure class="item">
+		<a href="{{ model.url }}">{% image model.image , "Picture of a Model" %}</a>
 		<div class="overlay">
-			<p class="text">{{ model.name }}</p>
+			<figcaption class="text">{{ model.name }}</figcaption>
 		</div>
-	</div>
+	</figure>
 	{% endfor %}
 </div>
