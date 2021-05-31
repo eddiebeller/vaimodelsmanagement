@@ -515,7 +515,7 @@
 		"shoe": 39,
 		"hair": "brown",
 		"eyes": "blue",
-		"photos": ["1", "2", "3", "4", "5", "6"]
+		"photos": ["1", "2", "3", "4", "5"]
 	},
 	{
 		"name": "Diana",
@@ -547,11 +547,7 @@
 			"15",
 			"16",
 			"17",
-			"18",
-			"19",
-			"20",
-			"21",
-			"22"
+			"18"
 		]
 	},
 	{
@@ -566,21 +562,7 @@
 		"shoe": 39,
 		"hair": "brown",
 		"eyes": "brown",
-		"photos": [
-			"1",
-			"2",
-			"3",
-			"4",
-			"5",
-			"6",
-			"7",
-			"8",
-			"9",
-			"10",
-			"11",
-			"12",
-			"13"
-		]
+		"photos": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
 	},
 	{
 		"name": "Lidia",
@@ -673,6 +655,20 @@
 		"photos": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
 	},
 	{
+		"name": "Matvey",
+		"image": "src/assets/home/Matvey.jpg",
+		"imageBig": "src/assets/home/24-Iri-Barsik2x.jpg",
+		"url": "/models/matvey",
+		"height": 187,
+		"bust": 84,
+		"waist": 61,
+		"hip": 89,
+		"shoe": 42,
+		"hair": "brown",
+		"eyes": "brown",
+		"photos": ["1", "2", "3", "4", "5", "6"]
+	},
+	{
 		"name": "Iri Barsik",
 		"image": "src/assets/home/24-Iri-Barsik.jpg",
 		"imageBig": "src/assets/home/24-Iri-Barsik2x.jpg",
@@ -746,9 +742,7 @@
 			"21",
 			"22",
 			"23",
-			"24",
-			"25",
-			"26"
+			"24"
 		]
 	}
 ]

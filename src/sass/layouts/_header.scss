@@ -36,6 +36,9 @@ header {
 	}
 	&__link {
 		line-height: 0;
+		&:focus {
+			outline: 1px solid #eee;
+		}
 	}
 	.logo {
 		@include mq(md) {

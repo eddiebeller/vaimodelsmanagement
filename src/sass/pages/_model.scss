@@ -95,9 +95,11 @@
 		}
 		.card {
 			width: 80%;
-			&.slick-current,
-			&.slick-current ~ .card {
-				opacity: 1;
+			@include mq(sm) {
+				&.slick-current,
+				&.slick-current ~ .card {
+					opacity: 1;
+				}
 			}
 		}
 		.slick-slide {
@@ -120,6 +122,9 @@
 			&.slick-current {
 				transform: scale(1);
 			}
+			&:focus {
+				outline: 1px solid #eee;
+			}
 		}
 		.slick-prev:before,
 		.slick-next:before {
@@ -128,20 +133,24 @@
 		.slick-arrow {
 			position: absolute;
 			top: 50%;
-			width: 2.778rem;
-			height: 1.11rem;
+			width: 1.111rem;
+			height: 2.222rem;
 			background: url('../../assets/arrow.svg') no-repeat;
 			background-size: cover;
+			cursor: pointer;
 			outline: none;
 			border: none;
 			font-size: 0;
 			&.slick-prev {
 				left: -60px;
-				transform: rotate(180deg);
 			}
 			&.slick-next {
 				right: -65px;
+				transform: rotate(180deg);
 			}
+			// &:focus {
+			// 	outline: 1px solid #eee;
+			// }
 		}
 	}
 }
