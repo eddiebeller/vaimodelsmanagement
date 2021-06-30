@@ -1,5 +1,6 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const Image = require('@11ty/eleventy-img');
+const eleventyGoogleFonts = require("eleventy-google-fonts");
 
 async function imageShortcode(src, alt, sizes = '100vw') {
 	if (alt === undefined) {
@@ -21,10 +22,10 @@ async function imageShortcode(src, alt, sizes = '100vw') {
     	${Object.values(metadata)
 				.map((imageFormat) => {
 					return `
-				<source type="${imageFormat[0].sourceType}"
-					srcset="${imageFormat
-						.map((entry) => entry.srcset)
-						.join(', ')}" sizes="${sizes}">`;
+					<source type="${imageFormat[0].sourceType}"
+						srcset="${imageFormat
+							.map((entry) => entry.srcset)
+							.join(', ')}" sizes="${sizes}">`;
 				})
 				.join('\n')}
       <img
@@ -40,6 +41,8 @@ async function imageShortcode(src, alt, sizes = '100vw') {
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addWatchTarget('./src/sass/');
+
+	eleventyConfig.addPlugin(eleventyGoogleFonts);
 
 	// copy
 	eleventyConfig.addPassthroughCopy('src/assets');
