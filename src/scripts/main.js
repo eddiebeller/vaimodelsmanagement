@@ -1,23 +1,17 @@
-document.querySelector('#nav-icon').addEventListener('click', () => {
-  document.body.classList.toggle('menu-expanded');
-  document.querySelector('#nav-icon').classList.toggle('open');
-  document.querySelector('.mobile-nav').classList.toggle('menu-opened');
-});
-
 $(document).ready(function () {
   $('.init').slick({
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     slidesToShow: 3,
-    centerMode: true,
-    centerPadding: false,
     arrows: true,
     infinite: true,
+    cssEase: 'linear',
+    speed: 550,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
         },
       },
       {
@@ -32,9 +26,17 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
           centerPadding: '60px',
+          centerMode: true,
         },
       },
     ],
   });
+});
+
+document.querySelector('#nav-icon').addEventListener('click', () => {
+  document.body.classList.toggle('menu-expanded');
+  document.querySelector('#nav-icon').classList.toggle('open');
+  document.querySelector('.mobile-nav').classList.toggle('menu-opened');
 });

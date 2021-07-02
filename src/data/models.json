@@ -41,10 +41,7 @@
 			"27",
 			"28",
 			"29",
-			"30",
-			"31",
-			"32",
-			"33"
+			"30"
 		]
 	},
 	{
@@ -58,7 +55,7 @@
 		"hip": 90,
 		"shoe": 40,
 		"hair": "brown",
-		"eyes": "brown",
+		"eyes": "hazel",
 		"photos": [
 			"1",
 			"2",
@@ -446,7 +443,7 @@
 		"waist": 59,
 		"hip": 90,
 		"shoe": 38,
-		"hair": "blond",
+		"hair": "brown",
 		"eyes": "brown",
 		"photos": [
 			"1",
@@ -515,7 +512,7 @@
 		"shoe": 39,
 		"hair": "brown",
 		"eyes": "blue",
-		"photos": ["1", "2", "3", "4", "5"]
+		"photos": ["1", "2", "3", "4", "5", "6", "7"]
 	},
 	{
 		"name": "Diana",
@@ -555,14 +552,14 @@
 		"image": "src/assets/home/18-Polina.jpg",
 		"imageBig": "src/assets/home/18-Polina2x.jpg",
 		"url": "/models/polina",
-		"height": 176,
+		"height": 172,
 		"bust": 84,
 		"waist": 60,
 		"hip": 90,
 		"shoe": 39,
 		"hair": "brown",
-		"eyes": "brown",
-		"photos": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
+		"eyes": "blue",
+		"photos": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
 	},
 	{
 		"name": "Lidia",
@@ -575,7 +572,7 @@
 		"hip": 88,
 		"shoe": 39,
 		"hair": "blond",
-		"eyes": "brown",
+		"eyes": "blue",
 		"photos": [
 			"1",
 			"2",
@@ -595,7 +592,8 @@
 			"16",
 			"17",
 			"18",
-			"19"
+			"19",
+			"20"
 		]
 	},
 	{
@@ -609,7 +607,7 @@
 		"hip": 90,
 		"shoe": 40,
 		"hair": "brown",
-		"eyes": "hazel",
+		"eyes": "blue",
 		"photos": ["1", "2", "3", "4", "5", "6", "7", "8"]
 	},
 	{
@@ -717,7 +715,7 @@
 		"hip": 89,
 		"shoe": 40,
 		"hair": "blond",
-		"eyes": "blue",
+		"eyes": "gray",
 		"photos": [
 			"1",
 			"2",

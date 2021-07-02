@@ -6,12 +6,13 @@
 	"scripts": {
 		"watch:sass": "sass  --no-source-map --watch src/sass:public/css",
 		"watch:eleventy": "eleventy --serve",
-		"build:sass": "sass  --no-source-map src/sass:public/css",
+		"build:sass": "sass  --no-source-map src/sass:public/css --style compressed",
 		"build:eleventy": "eleventy",
 		"postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
 		"start": "npm-run-all build:sass --parallel watch:*",
 		"build": "npm-run-all build:sass build:eleventy",
-		"remove": "rm -rf public/"
+		"remove": "rm -rf public/",
+		"deploy": "npm run build && rsync -av --delete ./public/ u1415623@31.31.196.201:~/www/vaimodels.com"
 	},
 	"repository": {
 		"type": "git",
