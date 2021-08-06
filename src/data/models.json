@@ -385,20 +385,6 @@
 		]
 	},
 	{
-		"name": "Veronica",
-		"image": "src/assets/home/12-Veronika.jpg",
-		"imageBig": "src/assets/home/12-Veronika2x.jpg",
-		"url": "/models/veronica",
-		"height": 181,
-		"bust": 84,
-		"waist": 60,
-		"hip": 90,
-		"shoe": 39,
-		"hair": "brown",
-		"eyes": "blue",
-		"photos": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
-	},
-	{
 		"name": "Daria R",
 		"image": "src/assets/home/13-DariaR.jpg",
 		"imageBig": "src/assets/home/13-DariaR2x.jpg",
@@ -513,39 +499,6 @@
 		"hair": "brown",
 		"eyes": "blue",
 		"photos": ["1", "2", "3", "4", "5", "6", "7"]
-	},
-	{
-		"name": "Diana",
-		"image": "src/assets/home/17-Diana.jpg",
-		"imageBig": "src/assets/home/17-Diana2x.jpg",
-		"url": "/models/diana",
-		"height": 176,
-		"bust": 84,
-		"waist": 60,
-		"hip": 90,
-		"shoe": 39,
-		"hair": "brown",
-		"eyes": "brown",
-		"photos": [
-			"1",
-			"2",
-			"3",
-			"4",
-			"5",
-			"6",
-			"7",
-			"8",
-			"9",
-			"10",
-			"11",
-			"12",
-			"13",
-			"14",
-			"15",
-			"16",
-			"17",
-			"18"
-		]
 	},
 	{
 		"name": "Polina",

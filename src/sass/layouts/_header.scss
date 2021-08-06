@@ -1,8 +1,5 @@
 @use '../abstracts/mixins' as *;
 
-header {
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
 .header {
 	position: fixed;
 	width: 100%;
@@ -13,6 +10,7 @@ header {
 	align-items: center;
 	padding: 0 5.556em;
 	min-height: 60px;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 	background-color: var(--clr-primary-white);
 	z-index: 1;
 	@include mq(md) {
