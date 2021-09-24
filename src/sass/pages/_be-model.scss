@@ -23,16 +23,6 @@
 			line-height: 21px;
 			margin: 0;
 		}
-		a {
-			color: var(--clr-primary-black);
-			font-size: var(--fz-small);
-			transition: 250ms ease;
-			&:focus,
-			&:hover {
-				text-decoration: underline;
-				color: var(--clr-primary-white);
-			}
-		}
 		ul {
 			list-style: disc;
 			margin: 1em 0 1em 1.125em;
