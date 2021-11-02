@@ -1,0 +1,13 @@
+.casting-page {
+	max-width: 90%;
+	margin-inline: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	place-items: center;
+	img {
+		height: 100%;
+	}
+	@media (max-width: 810px) {
+		grid-template-columns: 1fr;
+	}
+}

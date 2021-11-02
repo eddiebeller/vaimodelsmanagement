@@ -6,19 +6,18 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1, user-scalable=0"
 		/>
-		<title>V&I Models Management | Модельное агенство</title>
+		<title>V&I Models Management | Модельное агенство | {{ title or (eleventyComputed and eleventyComputed.title) }}</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta
 			name="description"
-			content="Лучшее модельное агентсво в Крыму и Краснодарском крае. Идет набор моделей для международных контрактов."
+			content="Лучшее модельное агентсво в Краснодарском крае и Крыму. Идет набор моделей для международных контрактов."
 		/>
 		<meta
 			name="keywords"
 			content="модельное, материнское, агенство, набор, Модель, vaimodelsmanagement, vaimodels, кастинг"
 		/>
 		<meta name="robots" content="index, follow" />
-		<title>{{ title }}</title>
-
+		<meta name="yandex-verification" content="b9b9a6aaeab17e36" />
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
@@ -42,6 +41,15 @@
 		{% eleventyGoogleFonts
 		'https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap'
 		%}
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120903845-2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-120903845-2');
+		</script>
 	</head>
 	<body class="{{ bodyClass }}">
 		{% include 'header.njk' %}

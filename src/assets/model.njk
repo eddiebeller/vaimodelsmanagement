@@ -1,10 +1,13 @@
 ---
 layout: models.njk
+
 pagination:
   data: models
   size: 1
   alias: data
 permalink: 'models/{{ data.name | slug }}/index.html'
+eleventyComputed:
+  title: "{{ data.name }}"
 ---
 
 <div class="model-card__container">

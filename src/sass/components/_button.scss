@@ -3,12 +3,12 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	margin-top: 1em;
-}
-.button {
-	padding: 0.7em;
-	background: var(--clr-primary-black);
-	border-radius: 5px;
-	color: var(--clr-primary-white);
-	font-size: var(--fz-default);
+	margin-top: 1.3em;
+	a.button {
+		padding: 0.7em;
+		background: var(--clr-primary-black);
+		border-radius: 5px;
+		color: var(--clr-primary-white);
+		font-size: var(--fz-default);
+	}
 }
