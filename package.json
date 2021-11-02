@@ -10,8 +10,7 @@
 		"build:eleventy": "eleventy",
 		"postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
 		"start": "npm-run-all build:sass --parallel watch:*",
-		"build": "npm-run-all build:sass build:eleventy",
-		"remove": "rm -rf public/",
+		"build": "rm -rf public/ && npm-run-all build:sass build:eleventy",
 		"deploy": "npm run build && rsync -av --delete ./public/ u1415623@31.31.196.201:~/www/vaimodels.com"
 	},
 	"repository": {
