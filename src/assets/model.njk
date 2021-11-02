@@ -1,13 +1,13 @@
 ---
 layout: models.njk
-
+metacontent:
 pagination:
   data: models
   size: 1
   alias: data
 permalink: 'models/{{ data.name | slug }}/index.html'
 eleventyComputed:
-  title: "{{ data.name }}"
+  title: V&I - {{ data.name }}
 ---
 
 <div class="model-card__container">
