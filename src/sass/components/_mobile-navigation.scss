@@ -16,9 +16,6 @@
 	cursor: pointer;
 	z-index: 1;
 	background-color: transparent;
-	&:focus {
-		// outline: 1px solid var(--clr-hover);
-	}
 	@include mq(xs) {
 		display: block;
 	}

@@ -40,9 +40,9 @@ async function imageShortcode(src, alt, sizes = '100vw') {
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
+	eleventyConfig.addPlugin(eleventyGoogleFonts);
 	eleventyConfig.addWatchTarget('./src/sass/');
 
-	eleventyConfig.addPlugin(eleventyGoogleFonts);
 
 	// copy
 	eleventyConfig.addPassthroughCopy('src/assets');
@@ -54,7 +54,6 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addJavaScriptFunction('image', imageShortcode);
 
 	//slick carusel
-
 	eleventyConfig.addPassthroughCopy({
 		'node_modules/slick-carousel/slick/slick.min.js': 'scripts/slick.min.js',
 	});
@@ -75,6 +74,6 @@ module.exports = function (eleventyConfig) {
 		dataTemplateEngine: 'njk',
 		markdownTemplateEngine: 'njk',
 		htmlTemplateEngine: 'njk',
-		templateFormats: ['md', 'njk'],
+		templateFormats: ['njk'],
 	};
 };

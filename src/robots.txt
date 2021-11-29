@@ -1,0 +1,5 @@
+Sitemap: https://vaimodels.com/sitemap.xml
+
+User-Agent: *
+Allow: /
+Host: vaimodels.com
