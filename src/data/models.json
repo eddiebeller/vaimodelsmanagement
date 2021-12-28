@@ -385,35 +385,17 @@
     ]
   },
   {
-    "name": "Rina",
-    "image": "src/assets/home/14-Rina.jpg",
-    "imageBig": "src/assets/home/14-Rina2x.jpg",
-    "url": "/models/rina",
-    "height": 173,
-    "bust": 81,
-    "waist": 59,
+    "name": "Alexandra",
+    "image": "src/assets/home/14-Alexandra.jpg",
+    "url": "/models/alexandra",
+    "height": 179,
+    "bust": 90,
+    "waist": 64,
     "hip": 90,
-    "shoe": 38,
-    "hair": "brown",
+    "shoe": 40,
+    "hair": "blue",
     "eyes": "brown",
-    "photos": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12",
-      "13",
-      "14",
-      "15",
-      "16"
-    ]
+    "photos": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
   },
   {
     "name": "Alina",
@@ -427,7 +409,7 @@
     "shoe": 39,
     "hair": "brown",
     "eyes": "green",
-    "photos": ["1", "2", "3", "4", "5", "6"]
+    "photos": ["1", "2", "3", "4", "5", "6", "7"]
   },
   {
     "name": "Daria",
