@@ -1,7 +1,8 @@
 @use '../abstracts/mixins' as *;
-.home__grid {
+.models__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(19.83rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 20px;
   @include mq(xs) {
     grid-template-columns: 1fr;
   }

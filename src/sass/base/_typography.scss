@@ -7,7 +7,7 @@ h5 {
 	color: var(--clr-primary-black);
 	font-family: var(--ff);
 	@include mq(md) {
-		font-size: var(--fz-medium-large);
+		font-size: var(--fz-lg);
 	}
 }
 
@@ -20,6 +20,6 @@ a {
 p {
 	font-family: var(--ff);
 	font-weight: normal;
-	font-size: var(--fz-small);
+	font-size: var(--fz-xs);
 	line-height: 1.1;
 }

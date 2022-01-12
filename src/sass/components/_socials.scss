@@ -1,0 +1,10 @@
+.socials {
+  position: fixed;
+  right: var(--fz-lg);
+  bottom: 4.1em;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}

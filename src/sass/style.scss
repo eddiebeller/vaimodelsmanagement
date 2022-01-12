@@ -9,10 +9,11 @@
 
 @use 'components/item';
 @use 'components/mobile-navigation';
-@use 'components/_heading';
-@use 'components/_button';
+@use 'components/heading';
+@use 'components/button';
+@use 'components/socials';
 
-@use 'pages/home';
+@use 'pages/intro';
 @use 'pages/model';
 @use 'pages/about';
 @use 'pages/be-model';

@@ -2,13 +2,27 @@
   --clr-primary-white: hsl(0, 0%, 100%);
   --clr-primary-black: hsl(0, 0%, 18%);
   --clr-hover: hsl(303, 66%, 60%);
+  --clr-hover-alpha: hsl(302, 100%, 68%, 0.2);
+
 
 
   --ff: 'Be Vietnam Pro', sans-serif;
 
-  --fz-default: 1.125rem;
+  //72px
   --fz-xl: 4.5rem;
+
+  //24px
   --fz-lg: 1.5rem;
+
+  //20px
   --fz-md: 1.25rem;
-  --fz-sm: 0.875rem;
+
+  //18px
+  --fz-default: 1.125rem;
+
+  //16px
+  --fz-sm: 1rem,
+
+  //14px
+  --fz-xs: 0.875rem;
 }

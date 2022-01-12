@@ -84,10 +84,10 @@
       color: var(--clr-hover);
     }
     @include mq(md) {
-      font-size: var(--fz-md);
+      font-size: var(--fz-sm);
     }
     @include mq(sm) {
-      font-size: var(--fz-sm);
+      font-size: var(--fz-xs);
     }
   }
 }

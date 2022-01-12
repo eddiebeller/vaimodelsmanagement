@@ -1,43 +1,24 @@
 @use '../abstracts/mixins' as *;
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  position: relative;
+  width: 100%;
   min-height: 60px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 25px;
+  align-content: center;
   padding: 0 5.556em;
   background: transparent;
-  @include mq(sm) {
+  @include mq(lg) {
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 3rem;
+  }
+  @include mq(md) {
+    grid-template-columns: 1fr;
+    place-items: center;
+    min-height: 60px;
     min-height: 3rem;
     padding: 0 30px;
-  }
-  @include mq(xs) {
-    grid-template-columns: 1fr;
-    min-height: 60px;
-  }
-  &__copy {
-    p {
-      color: var(--clr-primary-black);
-      font-size: var(--fz-sm);
-      @include mq(md) {
-        font-size: 0.625em;
-      }
-    }
-    @include mq(xs) {
-      justify-self: center;
-    }
-  }
-  &__phone {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    & > * {
-      color: var(--clr-primary-black);
-      font-size: var(--fz-md);
-    }
   }
   .email {
     display: flex;
@@ -48,12 +29,49 @@
       color: var(--clr-primary-black);
       font-weight: normal;
       @include mq(md) {
-        font-size: 0.625em;
+        // font-size: 0.625em;
       }
       &:focus,
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+  &__copy {
+    align-self: center;
+    justify-self: center;
+    @include mq(lg) {
+      align-self: start;
+      justify-self: start;
+    }
+    @include mq(lg) {
+      align-self: auto;
+      justify-self: auto;
+    }
+    p {
+      color: var(--clr-primary-black);
+      font-size: var(--fz-xs);
+      @include mq(md) {
+        // font-size: 0.625em;
+      }
+    }
+    @include mq(xs) {
+      justify-self: center;
+    }
+  }
+  .phones {
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    & > * {
+      color: var(--clr-primary-black);
+      font-size: var(--fz-md);
     }
   }
 }

@@ -1,13 +1,19 @@
 @use '../abstracts/mixins' as *;
 
-.index header {
+.intro header {
   background-color: transparent;
 }
-.index main {
+.intro main {
   margin-top: 0;
 }
+.intro footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: transparent;
+}
 .hero {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-image: url(../assets/hero-bg.jpg);
   background-repeat: no-repeat;
@@ -30,7 +36,6 @@
       transition: all 0.35s ease;
       &:hover {
         transform: translateX(10px);
-
       }
     }
     p {
