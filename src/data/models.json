@@ -412,6 +412,20 @@
     "photos": ["1", "2", "3", "4", "5", "6", "7"]
   },
   {
+    "name": "Juliana",
+    "image": "src/assets/home/Juliana.jpg",
+    "imageBig": "src/assets/home/Juliana2x.jpg",
+    "url": "/models/juliana",
+    "height": 172,
+    "bust": 82,
+    "waist": 60,
+    "hip": 84,
+    "shoe": 38,
+    "hair": "brown",
+    "eyes": "blue",
+    "photos": ["1", "2", "3", "4", "5", "6", "7"]
+  },
+  {
     "name": "Daria",
     "image": "src/assets/home/16-Daria.jpg",
     "imageBig": "src/assets/home/16-Daria2x.jpg",

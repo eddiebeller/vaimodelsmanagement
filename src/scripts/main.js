@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $('.init').slick({
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     slidesToShow: 3,
     arrows: true,
     infinite: true,
@@ -10,8 +10,8 @@ $(document).ready(function () {
       {
         breakpoint: 1024,
         settings: {
+          slidesToScroll: 1,
           slidesToShow: 3,
-          slidesToScroll: 2,
         },
       },
       {
