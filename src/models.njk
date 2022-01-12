@@ -1,0 +1,19 @@
+---
+bodyClass: home
+layout: base.njk
+title: V&I Models | Модельное агентство Краснодар
+metacontent: Лучшее модельное агентство в Краснодаре и Крыму. Идет набор моделей для работы в России и международных контрактов.
+eleventyNavigation:
+  key: Models
+---
+
+<div class="home__grid">
+	{% for model in models %}
+	<figure class="item">
+		<a href="{{ model.url }}">{% image model.image , "Picture of a Model" %}</a>
+		<div class="overlay">
+			<figcaption class="text">{{ model.name }}</figcaption>
+		</div>
+	</figure>
+	{% endfor %}
+</div>

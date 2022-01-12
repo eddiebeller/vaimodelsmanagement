@@ -1,9 +1,9 @@
 @use '../abstracts/mixins' as *;
 body {
 	background-color: var(--clr-primary-white);
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Be Vietnam Pro', sans-serif;
 	font-weight: normal;
-	font-size: var(--fz-default);
+	font-size: 16px;
 	text-rendering: optimizeSpeed;
 	line-height: 1.2;
 	overflow-x: hidden;
@@ -13,6 +13,7 @@ body {
 }
 main {
 	margin-top: 3.75rem;
+	height: 100%;
 	@include mq(sm) {
 		margin-top: 3rem;
 	}
@@ -24,12 +25,9 @@ section {
 	height: 100%;
 }
 .container {
-	max-width: 44rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	max-width: 100%;
 	height: 100%;
+	padding: 0 5.556em;
 	margin: 0 auto;
 	@include mq(md) {
 		padding: 2em 1em;
