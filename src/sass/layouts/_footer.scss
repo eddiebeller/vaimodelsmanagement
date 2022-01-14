@@ -3,22 +3,24 @@
   position: relative;
   width: 100%;
   min-height: 60px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px 25px;
-  align-content: center;
-  padding: 0 5.556em;
+  // padding: 0 5.556em;
   background: transparent;
-  @include mq(lg) {
-    grid-template-columns: repeat(2, 1fr);
-    min-height: 3rem;
-  }
-  @include mq(md) {
-    grid-template-columns: 1fr;
-    place-items: center;
-    min-height: 60px;
-    min-height: 3rem;
-    padding: 0 30px;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 25px;
+    align-content: center;
+    @include mq(lg) {
+      grid-template-columns: repeat(2, 1fr);
+      min-height: 3rem;
+    }
+    @include mq(md) {
+      grid-template-columns: 1fr;
+      place-items: center;
+      min-height: 60px;
+      min-height: 3rem;
+      // padding: 0 30px;
+    }
   }
   .email {
     display: flex;

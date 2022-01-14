@@ -1,10 +1,10 @@
 $(document).ready(function () {
-  $('.init').slick({
+  $(".init").slick({
     slidesToScroll: 1,
     slidesToShow: 3,
     arrows: true,
     infinite: true,
-    cssEase: 'linear',
+    cssEase: "linear",
     speed: 550,
     responsive: [
       {
@@ -27,16 +27,25 @@ $(document).ready(function () {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
-          centerPadding: '60px',
+          centerPadding: "60px",
           centerMode: true,
         },
       },
     ],
   });
 });
+$(window).scroll(function () {
+  let scroll = $(window).scrollTop();
 
-document.querySelector('#nav-icon').addEventListener('click', () => {
-  document.body.classList.toggle('menu-expanded');
-  document.querySelector('#nav-icon').classList.toggle('open');
-  document.querySelector('.mobile-nav').classList.toggle('menu-opened');
+  if (scroll >= 1) {
+    $(".header").addClass("scrolled");
+  } else {
+    $(".header").removeClass("scrolled");
+  }
+});
+
+document.querySelector("#nav-icon").addEventListener("click", () => {
+  document.body.classList.toggle("menu-expanded");
+  document.querySelector("#nav-icon").classList.toggle("open");
+  document.querySelector(".mobile-nav").classList.toggle("menu-opened");
 });

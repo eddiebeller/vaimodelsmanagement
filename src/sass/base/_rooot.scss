@@ -1,10 +1,9 @@
+
 :root {
   --clr-primary-white: hsl(0, 0%, 100%);
   --clr-primary-black: hsl(0, 0%, 18%);
-  --clr-hover: hsl(303, 66%, 60%);
-  --clr-hover-alpha: hsl(302, 100%, 68%, 0.2);
-
-
+  --clr-accent: hsl(303, 66%, 60%);
+  --clr-accent-alpha: hsl(303, 66%, 60%, 0.2);
 
   --ff: 'Be Vietnam Pro', sans-serif;
 
@@ -25,4 +24,7 @@
 
   //14px
   --fz-xs: 0.875rem;
+}
+::selection {
+  background-color: var(--clr-accent-alpha);
 }

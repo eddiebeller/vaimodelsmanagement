@@ -1,10 +1,30 @@
+@use '../abstracts/mixins' as *;
 .socials {
   position: fixed;
-  right: var(--fz-lg);
-  bottom: 4.1em;
+  inset: auto 1.7% 4rem auto;
   &__list {
     display: flex;
     flex-direction: column;
     gap: 40px;
+  }
+  &__item {
+    a {
+      display: inline-block;
+      svg path {
+        transition: fill 0.35s ease;
+      }
+      svg circle {
+        transition: fill 0.35s ease;
+      }
+      &:hover svg path {
+        fill: hsl(303, 66%, 60%);
+      }
+      &:hover svg circle {
+        fill: hsl(303, 66%, 60%);
+      }
+    }
+  }
+  @include mq(md) {
+    display: none;
   }
 }

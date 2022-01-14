@@ -3,25 +3,19 @@
 .header {
   position: fixed;
   width: 100%;
+  height: min(20vh, 60px);
   top: 0;
   left: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  padding: 0 5.556em;
-  min-height: 60px;
   background-color: var(--clr-primary-white);
+  transition: 0.35s ease;
   z-index: 1;
-  @include mq(md) {
-    padding: 0 5.556em;
+  &.scrolled {
+    box-shadow: 0px 10px 10px -10px rgba(33, 35, 38, 0.1);
   }
-  @include mq(sm) {
-    min-height: 3rem;
-    padding: 0 1.875em;
-  }
-  @include mq(xs) {
-    grid-template-columns: 1fr;
-    min-height: 60px;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
 
   &__logo {
@@ -67,7 +61,7 @@
     display: inline-block;
     justify-self: center;
     &.active a {
-      color: var(--clr-hover);
+      color: var(--clr-accent);
     }
   }
   &__link {
@@ -78,10 +72,10 @@
     white-space: nowrap;
     transition: all 0.35s ease;
     &:focus {
-      color: var(--clr-hover);
+      color: var(--clr-accent);
     }
     &:hover {
-      color: var(--clr-hover);
+      color: var(--clr-accent);
     }
     @include mq(md) {
       font-size: var(--fz-sm);

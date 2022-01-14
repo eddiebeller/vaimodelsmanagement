@@ -3,11 +3,10 @@ body {
   background-color: var(--clr-primary-white);
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1rem;
   text-rendering: optimizeSpeed;
   line-height: 1.2;
   overflow-x: hidden;
-  scroll-behavior: smooth;
   &.menu-expanded {
     overflow: hidden;
   }
@@ -25,15 +24,15 @@ section {
   height: 100%;
 }
 .container {
-  max-width: 100%;
+  width: min(90%, 1744px);
   height: 100%;
-  padding: 0 5.556em;
-  margin: 0 auto;
+  // padding: 0 5.556em;
+  margin-inline: auto;
   @include mq(md) {
-    padding: 2em 1em;
+    // padding: 2em 1em;
   }
   @include mq(sm) {
-    padding: 0 1em 2em;
+    // padding: 0 1em 2em;
   }
 }
 img {
