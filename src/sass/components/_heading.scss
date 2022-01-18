@@ -1,18 +1,13 @@
 @use '../abstracts/mixins' as *;
 
 .heading {
-	font-size: var(--fz-large);
-	font-style: normal;
-	font-weight: normal;
-	margin-bottom: 0.55em;
-	line-height: 55px;
-	text-align: center;
-	@include mq(sm) {
-		font-size: 3.625em;
-		line-height: 1.2;
-	}
-	@include mq(xs) {
-		font-size: 2em;
-		margin: 1.5rem 0;
-	}
+  color: var(--clr-primary-black);
+  font-weight: 700;
+  font-size: 2em;
+  @include mq(sm) {
+    font-size: 3.625em;
+  }
+  @include mq(xs) {
+    font-size: 2em;
+  }
 }

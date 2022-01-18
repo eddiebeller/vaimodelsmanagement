@@ -1,0 +1,22 @@
+.contacts {
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__item {
+    .name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--clr-primary-black);
+    }
+    a {
+      color: var(--clr-primary-black);
+      &.social__profile {
+        color: var(--clr-accent);
+      }
+    }
+  }
+}

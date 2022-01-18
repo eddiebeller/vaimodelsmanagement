@@ -24,16 +24,9 @@ section {
   height: 100%;
 }
 .container {
-  width: min(90%, 1744px);
+  width: min(90%, 1600px);
   height: 100%;
-  // padding: 0 5.556em;
   margin-inline: auto;
-  @include mq(md) {
-    // padding: 2em 1em;
-  }
-  @include mq(sm) {
-    // padding: 0 1em 2em;
-  }
 }
 img {
   display: block;

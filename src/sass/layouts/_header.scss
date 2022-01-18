@@ -13,16 +13,20 @@
     box-shadow: 0px 10px 10px -10px rgba(33, 35, 38, 0.1);
   }
   &__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   &__logo {
     display: flex;
     align-items: center;
+    margin-left: -10px;
     @include mq(xs) {
       justify-self: center;
+    }
+    @include mq(md) {
+      margin: 0;
     }
   }
   &__link {
@@ -46,8 +50,7 @@
     display: none;
   }
   &__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     align-items: center;
     gap: 4.125em;
     @include mq(md) {
