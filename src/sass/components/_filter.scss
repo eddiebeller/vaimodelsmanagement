@@ -6,10 +6,9 @@
     gap: 20px;
   }
   &__item {
-    a {
-      color: var(--clr-primary-black);
-      text-transform: uppercase;
-      font-size: clamp(1rem, 10vw + 1, 2rem);
-    }
+    cursor: pointer;
+    color: var(--clr-primary-black);
+    text-transform: uppercase;
+    font-size: clamp(1rem, 10vw + 1, 2rem);
   }
 }

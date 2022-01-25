@@ -15,7 +15,7 @@ eleventyNavigation:
       {% include "./_includes/social.njk" %}
     <!-- </div> -->
     {% for model in models %}
-    <figure class="item js-filterable" data-gender="{{model.gender}}">
+    <figure class="item" data-gender="{{model.gender}}">
       <a href="{{ model.url }}">
         {% image model.image , "Picture of a Model" %}
       </a>

@@ -44,13 +44,31 @@ $(window).scroll(function () {
   }
 });
 
-$(".js-filter").on("click", function () {
+$(".filter__item").on("click", function () {
   let $gender = $(this).attr("data-gender");
+  let $className = $(this).attr("class");
+
+  if ($className == "filter__item all") {
+    $(".man").removeClass("active");
+    $(".woman").removeClass("active");
+    $(".all").addClass("active");
+  }
+  if ($className == "filter__item woman") {
+    $(".all").removeClass("active");
+    $(".man").removeClass("active");
+    $(".woman").addClass("active");
+  }
+  if ($className == "filter__item man") {
+    $(".all").removeClass("active");
+    $(".woman").removeClass("active");
+    $(".man").addClass("active");
+  }
+
   if ($gender == "all") {
-    $(".js-filterable").removeClass("is-hidden");
+    $(".item").removeClass("is-hidden");
   } else {
-    $(".js-filterable").addClass("is-hidden");
-    $(".js-filterable[data-gender=" + $gender + "]").removeClass("is-hidden");
+    $(".item").addClass("is-hidden");
+    $(".item[data-gender=" + $gender + "]").removeClass("is-hidden");
   }
 });
 
