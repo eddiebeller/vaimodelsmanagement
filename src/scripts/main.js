@@ -44,6 +44,16 @@ $(window).scroll(function () {
   }
 });
 
+$(".js-filter").on("click", function () {
+  let $gender = $(this).attr("data-gender");
+  if ($gender == "all") {
+    $(".js-filterable").removeClass("is-hidden");
+  } else {
+    $(".js-filterable").addClass("is-hidden");
+    $(".js-filterable[data-gender=" + $gender + "]").removeClass("is-hidden");
+  }
+});
+
 document.querySelector("#nav-icon").addEventListener("click", () => {
   document.body.classList.toggle("menu-expanded");
   document.querySelector("#nav-icon").classList.toggle("open");
@@ -60,10 +70,10 @@ function init() {
     // Порядок по умолчанию: «широта, долгота».
     // Чтобы не определять координаты центра карты вручную,
     // воспользуйтесь инструментом Определение координат.
-    center: [45.035470, 38.975313],
+    center: [45.03547, 38.975313],
     // Уровень масштабирования. Допустимые значения:
     // от 0 (весь мир) до 19.
     zoom: 12,
-    controls: ['zoomControl'],
+    controls: ["zoomControl"],
   });
 }
