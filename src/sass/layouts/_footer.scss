@@ -3,8 +3,11 @@
   position: relative;
   width: 100%;
   min-height: 60px;
-  // padding: 0 5.556em;
   background: transparent;
+  padding-block: 1rem;
+  @include mq(md) {
+    min-height: auto;
+  }
   &__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -17,9 +20,6 @@
     @include mq(md) {
       grid-template-columns: 1fr;
       place-items: center;
-      min-height: 60px;
-      min-height: 3rem;
-      // padding: 0 30px;
     }
   }
   .email {
@@ -27,7 +27,7 @@
     align-items: center;
     gap: 10px;
     a {
-      font-size: var(--fz-md);
+      font-size: clamp(0.95rem, 3vw, var(--fz-md));
       color: var(--clr-primary-black);
       font-weight: normal;
       @include mq(md) {
@@ -39,31 +39,14 @@
       }
     }
   }
-  &__copy {
-    align-self: center;
-    justify-self: center;
-    @include mq(lg) {
-      align-self: start;
-      justify-self: start;
-    }
-    @include mq(lg) {
-      align-self: auto;
-      justify-self: auto;
-    }
-    p {
-      color: var(--clr-primary-black);
-      font-size: var(--fz-xs);
-      @include mq(md) {
-        // font-size: 0.625em;
-      }
-    }
-    @include mq(xs) {
-      justify-self: center;
-    }
-  }
   .phones {
+    @include mq(lg) {
+      grid-row: 2/ 3;
+    }
+    @include mq(md) {
+      grid-row: auto;
+    }
     display: flex;
-    // flex-direction: column;
     align-items: center;
     gap: 20px;
   }
@@ -73,7 +56,24 @@
     gap: 10px;
     & > * {
       color: var(--clr-primary-black);
-      font-size: var(--fz-md);
+      font-size: clamp(0.7rem, 3vw, var(--fz-md));
+    }
+  }
+  &__copy {
+    align-self: center;
+    justify-self: center;
+    @include mq(lg) {
+      grid-row: 1 / 3;
+      justify-self: center;
+      align-self: center;
+    }
+    @include mq(md) {
+      grid-row: auto;
+    }
+    p {
+      margin: 0;
+      color: var(--clr-primary-black);
+      font-size: clamp(0.5rem, 3vw, 0.8rem);
     }
   }
 }

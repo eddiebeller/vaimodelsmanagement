@@ -1,10 +1,10 @@
 @use '../abstracts/mixins' as *;
 .be-model {
   h2 {
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem)
   }
   p {
-    font-size: var(--fz-md);
+    font-size: clamp(0.95rem, 2.2vw, var(--fz-md));
     line-height: 1.2;
     margin: 0;
   }
@@ -31,6 +31,7 @@
       text-transform: uppercase;
       margin-block: 0.5rem;
       padding-left: 35px;
+      font-size: clamp(0.8rem, 1.7vw, 1rem);
       &:before {
         content: "";
         position: absolute;

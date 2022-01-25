@@ -12,16 +12,13 @@ body {
   }
 }
 main {
-  margin-top: 3.75rem;
+  width: 100%;
   @include mq(sm) {
     margin-top: 3rem;
   }
   @include mq(xs) {
     margin-top: 3.75rem;
   }
-}
-section {
-  height: 100%;
 }
 .container {
   width: min(90%, 1600px);

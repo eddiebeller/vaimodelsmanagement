@@ -1,156 +1,156 @@
 @use '../abstracts/mixins' as *;
 
 .model-card {
-	&__container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		max-width: 1420px;
-		height: 100%;
-		padding-top: 2.2em;
-		padding-bottom: 4.375em;
-		margin: 0 auto;
-		@include mq(sm) {
-			padding: 1em 0;
-		}
-	}
-	&__subheading {
-		margin: 0;
-		font-style: normal;
-		font-weight: bold;
-		font-size: var(--fz-default);
-		line-height: 1;
-		text-transform: uppercase;
-		@include mq(md) {
-			font-size: 1em;
-		}
-		@include mq(sm) {
-			font-size: 0.8em;
-		}
-	}
-	&__heading {
-		margin: 0;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 3.5rem;
-		line-height: 0.8;
-		@include mq(md) {
-			font-size: 2.5em;
-		}
-		@include mq(xs) {
-			font-size: 2em;
-		}
-	}
-	&__params {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-		gap: 0.5em;
-		margin: 1.1em 0 1.1em 0;
-		@include mq(sm) {
-			margin-bottom: 1em;
-		}
-		@include mq(xs) {
-			font-size: var(--fz-small);
-		}
-		p {
-			font-size: 1.125rem;
-			text-transform: uppercase;
-			font-weight: 300;
-			margin: 0;
-			@include mq(md) {
-				font-size: var(--fz-default);
-			}
-			@include mq(xs) {
-				font-size: var(--fz-small);
-			}
-		}
-	}
-	.carusel {
-		display: grid;
-		grid-template-columns: 1fr;
-		height: auto;
-		width: 100%;
-		margin: 0 auto;
-		visibility: hidden;
-		@media (max-width: 1540px) {
-			width: 85%;
-		}
-		@media (max-width: 768px) {
-			width: 100vw;
-			height: 100%;
-		}
-		&.slick-initialized {
-			visibility: visible;
-		}
-		.slick-track {
-			display: flex;
-			align-items: stretch;
-			gap: 10px;
-			@include mq(sm) {
-				height: 100%;
-			}
-		}
-		.card {
-			width: 80%;
-			@include mq(sm) {
-				&.slick-current,
-				&.slick-current ~ .card {
-					opacity: 1;
-				}
-			}
-		}
-		.slick-slide {
-			height: 100%;
-			img {
-				width: 100%;
-				height: auto;
-			}
-			@include mq(sm) {
-				position: relative;
-				width: 100vw !important;
-				margin: 0 15px;
-				height: auto;
-				opacity: 0;
-				transition: opacity 0.35s ease;
-			}
-			@include mq(xs) {
-				margin: 0;
-			}
-			&.slick-current {
-				transform: scale(1);
-			}
-			&:focus {
-				outline: 1px solid #eee;
-			}
-		}
-		.slick-prev:before,
-		.slick-next:before {
-			color: black;
-		}
-		.slick-arrow {
-			position: absolute;
-			top: 50%;
-			width: 1.111rem;
-			height: 2.222rem;
-			background: url('../../assets/arrow.svg') no-repeat;
-			background-size: cover;
-			cursor: pointer;
-			outline: none;
-			border: none;
-			font-size: 0;
-			&.slick-prev {
-				left: -60px;
-			}
-			&.slick-next {
-				right: -65px;
-				transform: rotate(180deg);
-			}
-			// &:focus {
-			// 	outline: 1px solid #eee;
-			// }
-		}
-	}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1420px;
+    height: 100%;
+    padding-top: 2.2em;
+    padding-bottom: 4.375em;
+    margin: 0 auto;
+    @include mq(sm) {
+      padding: 1em 0;
+    }
+  }
+  &__subheading {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--fz-default);
+    line-height: 1;
+    text-transform: uppercase;
+    @include mq(md) {
+      font-size: 1em;
+    }
+    @include mq(sm) {
+      font-size: 0.8em;
+    }
+  }
+  &__heading {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 0.8;
+    @include mq(md) {
+      font-size: 2.5em;
+    }
+    @include mq(xs) {
+      font-size: 2em;
+    }
+  }
+  &__params {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    margin: 1.1em 0 1.1em 0;
+    @include mq(sm) {
+      margin-bottom: 1em;
+    }
+    @include mq(xs) {
+      font-size: var(--fz-small);
+    }
+    p {
+      font-size: 1.125rem;
+      text-transform: uppercase;
+      font-weight: 300;
+      margin: 0;
+      @include mq(md) {
+        font-size: var(--fz-default);
+      }
+      @include mq(xs) {
+        font-size: var(--fz-small);
+      }
+    }
+  }
+  .carusel {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    visibility: hidden;
+    @media (max-width: 1540px) {
+      width: 85%;
+    }
+    @media (max-width: 768px) {
+      width: 100vw;
+      height: 100%;
+    }
+    &.slick-initialized {
+      visibility: visible;
+    }
+    .slick-track {
+      display: flex;
+      align-items: stretch;
+      gap: 10px;
+      @include mq(sm) {
+        height: 100%;
+      }
+    }
+    .card {
+      width: 80%;
+      @include mq(sm) {
+        &.slick-current,
+        &.slick-current ~ .card {
+          opacity: 1;
+        }
+      }
+    }
+    .slick-slide {
+      height: 100%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      @include mq(sm) {
+        position: relative;
+        width: 100vw !important;
+        margin: 0 15px;
+        height: auto;
+        opacity: 0;
+        transition: opacity 0.35s ease;
+      }
+      @include mq(xs) {
+        margin: 0;
+      }
+      &.slick-current {
+        transform: scale(1);
+      }
+      &:focus {
+        outline: 1px solid #eee;
+      }
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+    .slick-arrow {
+      position: absolute;
+      top: 50%;
+      width: 1.111rem;
+      height: 2.222rem;
+      background: url('../../assets/arrow.svg') no-repeat;
+      background-size: cover;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      font-size: 0;
+      &.slick-prev {
+        left: -60px;
+      }
+      &.slick-next {
+        right: -65px;
+        transform: rotate(180deg);
+      }
+      // &:focus {
+      // 	outline: 1px solid #eee;
+      // }
+    }
+  }
 }

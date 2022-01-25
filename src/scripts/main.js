@@ -49,3 +49,21 @@ document.querySelector("#nav-icon").addEventListener("click", () => {
   document.querySelector("#nav-icon").classList.toggle("open");
   document.querySelector(".mobile-nav").classList.toggle("menu-opened");
 });
+
+// Функция ymaps.ready() будет вызвана, когда
+// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+ymaps.ready(init);
+function init() {
+  // Создание карты.
+  var myMap = new ymaps.Map("map", {
+    // Координаты центра карты.
+    // Порядок по умолчанию: «широта, долгота».
+    // Чтобы не определять координаты центра карты вручную,
+    // воспользуйтесь инструментом Определение координат.
+    center: [45.035470, 38.975313],
+    // Уровень масштабирования. Допустимые значения:
+    // от 0 (весь мир) до 19.
+    zoom: 12,
+    controls: ['zoomControl'],
+  });
+}

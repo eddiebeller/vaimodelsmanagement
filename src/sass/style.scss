@@ -12,10 +12,13 @@
 @use 'components/heading';
 @use 'components/button';
 @use 'components/socials';
+@use 'components/map';
+@use 'components/filter';
 
 @use 'pages/intro';
 @use 'pages/model';
+@use 'pages/models';
 @use 'pages/about';
 @use 'pages/be-model';
 @use 'pages/casting';
-@use 'pages/concats';
+@use 'pages/contacts';

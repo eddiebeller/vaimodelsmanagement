@@ -10,26 +10,21 @@
     grid-template-columns: 1fr;
   }
 }
-.page-grid,
-.model-card-page {
+
+.full-height {
   display: grid;
-  grid-template-rows: 3.75rem 1fr 3.75rem;
-  grid-template-areas: "header" "content" "footer";
-  @include mq(sm) {
-    grid-template-rows: 3rem 1fr 3rem;
+  grid-template-rows: 4rem 1fr auto;
+  grid-template-areas:
+    "navigation"
+    "content"
+    "footer";
+  .header {
+    grid-area: navigation;
   }
-  @include mq(xs) {
-    grid-template-rows: 3.75rem 1fr 3.75rem;
-  }
-  header {
-    grid-area: header;
-  }
-  main {
+  .content {
     grid-area: content;
-    margin: 0;
   }
-  footer {
+  .footer {
     grid-area: footer;
-    align-self: flex-end;
   }
 }

@@ -1,91 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, user-scalable=0"
-		/>
-		<title> {{ title or (eleventyComputed and eleventyComputed.title) }}</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta
-			name="description"
-			content="{{ metacontent }}"
-		/>
-		<meta
-			name="keywords"
-			content="модельное, материнское, агентство, набор, работа моделью, модель, vaimodelsmanagement, vaimodels, кастинг, ваимоделс"
-		/>
-		<meta name="robots" content="index, follow" />
-		<meta name="yandex-verification" content="b9b9a6aaeab17e36" />
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="{{ '/assets/apple-touch-icon.png' | url }}"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="{{ '/assets/favicon-32x32.png' | url }}"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="{{ '/assets/favicon-16x16.png' | url }}"
-		/>
-		<link rel="stylesheet" href="{{ '/css/slick.css' | url }}" />
-		<link rel="stylesheet"  type="text/css" href="{{ '/css/style.css' | url }}" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		{# {% eleventyGoogleFonts
-		'https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap'
-		%} #}
-		<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120903845-2"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=0"
+    />
+    <title>{{ title or (eleventyComputed and eleventyComputed.title) }}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="{{ metacontent }}" />
+    <meta
+      name="keywords"
+      content="модельное, материнское, агентство, набор, работа моделью, модель, vaimodelsmanagement, vaimodels, кастинг, ваимоделс"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="yandex-verification" content="b9b9a6aaeab17e36" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{ '/assets/apple-touch-icon.png' | url }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{ '/assets/favicon-32x32.png' | url }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{ '/assets/favicon-16x16.png' | url }}"
+    />
+    <link rel="stylesheet" href="{{ '/css/slick.css' | url }}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ '/css/style.css' | url }}"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    {# {% eleventyGoogleFonts
+    'https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap'
+    %} #}
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-120903845-2"
+    ></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=67eeb291-9146-46e9-bffa-0cc338b0d98d&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-			gtag('config', 'UA-120903845-2');
-		</script>
+      gtag("config", "UA-120903845-2");
+    </script>
 
-		<!-- Yandex.Metrika counter -->
-		<script type="text/javascript" >
-			(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-			m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
 
-			ym(86236878, "init", {
-						clickmap:true,
-						trackLinks:true,
-						accurateTrackBounce:true,
-						webvisor:true
-			});
-		</script>
-		<noscript><div><img src="https://mc.yandex.ru/watch/86236878" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-		<!-- /Yandex.Metrika counter -->
-	</head>
-	<body class="{{ bodyClass }}">
-		{% include 'header.njk' %}
-		<main>
-			{{ content | safe }}
-		</main>
-		{% include 'footer.njk' %}
-
-		<script
-			type="text/javascript"
-			src="{{ '../../' | url }}scripts/jquery.min.js"
-		></script>
-		<script
-			type="text/javascript"
-			src="{{ '../../' | url }}scripts/slick.min.js"
-		></script>
-		<script
-			type="text/javascript"
-			src="{{ '../../' | url }}scripts/main.js"
-		></script>
-	</body>
+      ym(86236878, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/86236878"
+          style="position: absolute; left: -9999px"
+          alt=""
+        />
+      </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+  </head>
+  <body class="{{ bodyClass }}">
+    {% include 'header.njk' %}
+    <main class="content">
+      {{ content | safe }}
+    </main>
+    {% include 'footer.njk' %}
+    <script
+      type="text/javascript"
+      src="{{ '../../' | url }}scripts/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ '../../' | url }}scripts/slick.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ '../../' | url }}scripts/main.js"
+    ></script>
+  </body>
 </html>
