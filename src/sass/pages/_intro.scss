@@ -34,9 +34,8 @@
     align-items: center;
     gap: 20px;
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     @include mq(md) {
-      margin-bottom: 15px;
       flex-direction: column;
       align-items: flex-start;
     }
@@ -45,7 +44,12 @@
       @include mq(md) {
         position: absolute;
         right: 0;
-        bottom: -0.5rem;
+        bottom: -0.4rem;
+      }
+      svg {
+        @include mq(xs) {
+          height: 1rem;
+        }
       }
       &:hover {
         transform: translateX(10px);
@@ -56,18 +60,22 @@
       color: var(--clr-primary-black);
       font-weight: 700;
       line-height: 1;
+      margin: 0;
       @include mq(md) {
         width: 100%;
-        margin-bottom: 0;
       }
     }
     &__heading {
       color: var(--clr-primary-white);
       font-weight: 700;
+      margin-block: 10px;
       font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
-      @include mq(md) {
-        margin-top: 0;
+      @include mq(sm) {
+        width: auto;
         line-height: 1;
+        br {
+          display: none;
+        }
       }
     }
   }

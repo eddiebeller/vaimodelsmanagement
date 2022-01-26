@@ -16,12 +16,6 @@ section {
 }
 main {
   width: 100%;
-  @include mq(sm) {
-    margin-top: 3rem;
-  }
-  @include mq(xs) {
-    margin-top: 3.75rem;
-  }
 }
 .container {
   width: min(90%, 1600px);

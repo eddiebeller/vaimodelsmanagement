@@ -2,9 +2,9 @@
 .socials {
   position: fixed;
   // inset: auto 3.5rem 4rem auto;
-  inset: auto 3% 4rem auto;
-  @include mq(lg) {
-    inset: auto 1rem 4rem auto;
+  inset: auto 3vw 40vh auto;
+  @include mq(xl) {
+    inset: auto 1.5vw 40vh auto;
   }
   &__list {
     display: flex;
@@ -14,11 +14,15 @@
   &__item {
     a {
       display: inline-block;
-      svg path {
-        transition: fill 0.35s ease;
-      }
-      svg circle {
-        transition: fill 0.35s ease;
+      svg {
+        width: 1.7rem;
+        height: 1.7rem;
+        path {
+          transition: fill 0.35s ease;
+        }
+        circle {
+          transition: fill 0.35s ease;
+        }
       }
       &:hover svg path {
         fill: hsl(303, 66%, 60%);

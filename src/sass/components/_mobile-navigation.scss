@@ -97,9 +97,11 @@
     a {
       color: var(--clr-primary-white);
       font-size: var(--fz-md);
+      text-transform: uppercase;
+      transition: 0.35s ease;
       &:focus,
       &:hover {
-        text-decoration: underline;
+        // text-decoration: underline;
         color: var(--clr-accent);
       }
     }

@@ -3,12 +3,16 @@
   margin-block: 20px;
   &__list {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
   }
   &__item {
     cursor: pointer;
     color: var(--clr-primary-black);
     text-transform: uppercase;
-    font-size: clamp(1rem, 4vw, 1.25rem);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    transition: 0.35s ease;
+    &:hover {
+      color: var(--clr-accent);
+    }
   }
 }

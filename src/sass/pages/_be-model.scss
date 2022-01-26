@@ -1,17 +1,20 @@
 @use '../abstracts/mixins' as *;
 .be-model {
   h2 {
-    font-size: clamp(1.2rem, 2.5vw, 1.5rem)
+    font-size: clamp(1.4rem, 2.5vw, 1.5rem);
+    margin: 0 0 20px;
   }
   p {
-    font-size: clamp(0.95rem, 2.2vw, var(--fz-md));
-    line-height: 1.2;
+    // font-size: clamp(0.95rem, 2.2vw, var(--fz-md));
+    font-size: var(--fz-md);
+    line-height: 1.35;
     margin: 0;
   }
   &__container {
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    place-content: center;
     @include mq(md) {
       grid-template-columns: 1fr;
       gap: 2rem;
@@ -21,8 +24,17 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
-    p {
-      width: min(90%, 50ch);
+    @include mq(sm) {
+      gap: 20px;
+    }
+  }
+  &__button {
+    @include mq(sm) {
+      text-align: center;
+      a {
+        padding-block: 1rem;
+        font-size: var(--fz-sm);
+      }
     }
   }
   &__requirements {
@@ -31,14 +43,14 @@
       text-transform: uppercase;
       margin-block: 0.5rem;
       padding-left: 35px;
-      font-size: clamp(0.8rem, 1.7vw, 1rem);
+      font-size: clamp(0.83rem, 1.7vw, 1rem);
       &:before {
         content: "";
         position: absolute;
         width: 25px;
         height: 25px;
         left: 0;
-        top: -1px;
+        top: -5px;
         background: url("../assets/check.svg") no-repeat center center;
       }
     }

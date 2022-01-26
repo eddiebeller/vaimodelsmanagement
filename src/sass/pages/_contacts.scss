@@ -17,11 +17,11 @@
   }
   &__item {
     .name {
-      font-size: clamp(1.2rem, 3.5vw, 1.85rem);
+      font-size: clamp(1.4rem, 2.5vw, 1.5rem);
       font-weight: 700;
       color: var(--clr-primary-black);
       padding: 0;
-      margin: 0;
+      margin: 0 0 20px;
     }
     .icon {
       display: flex;
@@ -41,7 +41,7 @@
     }
     span,
     a {
-      font-size: clamp(1rem, 2.2vw, var(--fz-md));
+      font-size: clamp(1rem, 2vw, var(--fz-md));
     }
     &-right {
       // justify-self: flex-end;
