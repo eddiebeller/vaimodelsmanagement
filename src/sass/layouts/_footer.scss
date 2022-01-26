@@ -1,73 +1,81 @@
 @use '../abstracts/mixins' as *;
 .footer {
-	min-height: 60px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	align-items: center;
-	padding: 0 5.556em;
-	background: var(--clr-primary-black);
-	@include mq(sm) {
-		min-height: 3rem;
-		padding: 0 30px;
-	}
-	@include mq(xs) {
-		grid-template-columns: 1fr;
-		min-height: 60px;
-	}
-	&__copy {
-		p {
-			color: var(--clr-primary-white);
-			font-size: var(--fz-small);
-			@include mq(md) {
-				font-size: 0.625em;
-			}
-		}
-		@include mq(xs) {
-			justify-self: center;
-		}
-	}
-	&__contacts {
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		gap: 4.611em;
-		@include mq(lg) {
-			gap: 3rem;
-		}
-		@include mq(md) {
-			gap: 2rem;
-		}
-		@include mq(xs) {
-			display: none;
-		}
-	}
-	li {
-		line-height: 0;
-	}
-	.email {
-		a {
-			font-size: var(--fz-small);
-			text-transform: uppercase;
-			font-weight: normal;
-			@include mq(md) {
-				font-size: 0.625em;
-			}
-			&:focus,
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-	}
-	.socials {
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-		gap: 2.556em;
-		@include mq(lg) {
-			gap: 2.5rem;
-		}
-		@include mq(md) {
-			gap: 1.25rem;
-		}
-	}
+  position: relative;
+  width: 100%;
+  min-height: 60px;
+  background: transparent;
+  @include mq(md) {
+    min-height: auto;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 25px;
+    align-content: center;
+    @include mq(lg) {
+      grid-template-columns: repeat(2, 1fr);
+      min-height: 3rem;
+    }
+    @include mq(md) {
+      grid-template-columns: 1fr;
+      place-items: center;
+    }
+    @include mq(sm) {
+      place-items: flex-start;
+    }
+  }
+  .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    a {
+      font-size: clamp(0.95rem, 3vw, var(--fz-md));
+      color: var(--clr-primary-black);
+      font-weight: normal;
+      @include mq(md) {
+        // font-size: 0.625em;
+      }
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .phones {
+    @include mq(lg) {
+      grid-row: 2/ 3;
+    }
+    @include mq(md) {
+      grid-row: auto;
+    }
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    & > * {
+      color: var(--clr-primary-black);
+      font-size: clamp(0.7rem, 3vw, var(--fz-md));
+    }
+  }
+  &__copy {
+    align-self: center;
+    justify-self: center;
+    @include mq(lg) {
+      grid-row: 1 / 3;
+      justify-self: center;
+      align-self: center;
+    }
+    @include mq(md) {
+      grid-row: auto;
+    }
+    p {
+      margin: 0;
+      color: var(--clr-primary-black);
+      font-size: clamp(0.5rem, 3vw, 0.8rem);
+    }
+  }
 }

@@ -1,39 +1,46 @@
 ---
-bodyClass: be-model-page page-grid
+bodyClass: be-model-page full-height
 layout: base.njk
 title: Be a Model
-heading: Идет набор в агентство
+heading: Хочешь стать моделью?
 metacontent: Начни модельную карьеру вместе с нашим агентством vaimodels.
 eleventyNavigation:
   key: Be a model
+  order: 2
 ---
 
 <section class="be-model">
-	<div class="container">
-		{% include 'heading.njk' %}
-		<div class="be-model__requirements">
-			<p class="requirements">Требования к моделям:</p>
-			<p class="requirements">Возраст: от 13-23 лет</p>
-			<p class="requirements">Девушки: Рост от 170-181</p>
-			<p class="requirements">Бедра до 90 см</p>
-			<p class="requirements">
-				Парни: Рост от 185-192. Спортивное телосложение
-			</p>
-		</div>
-		<div class="be-model__info">
-			<p>
-				Пройти онлайн-кастинг можно в любое время. Возможно именно ты станешь
-				частью нашего агентства и вскоре полетишь на свой первый рабочий
-				контракт!
-			</p>
-			<div class="btn-wrapper">
-				<a
-					class="button"
-					href="https://docs.google.com/forms/d/e/1FAIpQLSep_4esH6OmlLhkD9a7g-BhS3QGjGHKMPfrl_pFNPFGgv7u0Q/viewform"
-				>
-					Заполнить анкету
-				</a>
-			</div>
-		</div>
-	</div>
+  <div class="be-model__container container">
+    {% include "./_includes/social.njk" %}
+    <div class="be-model__left">
+      <div>
+        <h2 class="requirements">Хочешь стать моделью?</h2>
+        <p>
+          Записаться на живой кастинг можно в Краснодаре и Крыму. Заполни анкету
+          и мы свяжемся с тобой. Мы так же работаем с моделями из разных
+          городов. Для тех, кто находится далеко от нас, мы разработали план по
+          развитию и предлагаем пройти Онлайн-кастинг. Если типаж нам подойдет,
+          мы всему научим и организуем съемку портфолио. Сделай первый шаг и
+          заполни анкету. Возможно именно ты станешь частью нашего агентства и
+          вскоре полетишь на свой первый рабочий контракт!
+        </p>
+      </div>
+      <div class="be-model__requirements">
+        <h2>Требования к моделям:</h2>
+        <p class="requirements">Возраст 14-23</p>
+        <p class="requirements">Девушки: Рост от 170-181, Бедра до 90</p>
+        <p class="requirements">Парни: Рост 187-190, спортивное телосложение</p>
+      </div>
+      <a
+        class="button"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSep_4esH6OmlLhkD9a7g-BhS3QGjGHKMPfrl_pFNPFGgv7u0Q/viewform"
+      >
+        Заполнить анкету
+      </a>
+    </div>
+    <div class="be-model__right">
+      <!-- <img src="../assets/be-model-bg.jpg" alt="image of a model" /> -->
+      {% image "./src/assets/be-model-bg.jpg" , "Cover of magazine" %}
+    </div>
+  </div>
 </section>

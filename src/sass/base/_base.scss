@@ -1,45 +1,41 @@
 @use '../abstracts/mixins' as *;
 body {
-	background-color: var(--clr-primary-white);
-	font-family: 'Roboto', sans-serif;
-	font-weight: normal;
-	font-size: var(--fz-default);
-	text-rendering: optimizeSpeed;
-	line-height: 1.2;
-	overflow-x: hidden;
-	&.menu-expanded {
-		overflow: hidden;
-	}
-}
-main {
-	margin-top: 3.75rem;
-	@include mq(sm) {
-		margin-top: 3rem;
-	}
-	@include mq(xs) {
-		margin-top: 3.75rem;
-	}
+  background-color: var(--clr-primary-white);
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  text-rendering: optimizeSpeed;
+  line-height: 1.2;
+  overflow-x: hidden;
+  &.menu-expanded {
+    overflow: hidden;
+  }
 }
 section {
-	height: 100%;
+  height: 100%;
+}
+main {
+  width: 100%;
+  @include mq(sm) {
+    margin-top: 3rem;
+  }
+  @include mq(xs) {
+    margin-top: 3.75rem;
+  }
 }
 .container {
-	max-width: 44rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	margin: 0 auto;
-	@include mq(md) {
-		padding: 2em 1em;
-	}
-	@include mq(sm) {
-		padding: 0 1em 2em;
-	}
+  width: min(90%, 1600px);
+  height: 100%;
+  margin-inline: auto;
 }
 img {
-	display: block;
-	object-fit: cover;
-	max-width: 100%;
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+}
+.is-hidden {
+  display: none;
+}
+.active {
+  color: var(--clr-accent) !important;
 }

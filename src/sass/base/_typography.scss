@@ -5,22 +5,20 @@ h3,
 h4,
 h5 {
 	color: var(--clr-primary-black);
-	font-family: 'Cormorant SC', serif;
+	font-family: var(--ff);
 	@include mq(md) {
-		font-size: var(--fz-medium-large);
+		font-size: var(--fz-lg);
 	}
 }
 
 a {
-	color: var(--clr-primary-white);
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--ff);
 	font-weight: normal;
 	font-size: var(--fz-default);
 	text-decoration: none;
 }
 p {
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--ff);
 	font-weight: normal;
-	font-size: var(--fz-small);
-	line-height: 1.1;
+	font-size: var(--fz-xs);
 }

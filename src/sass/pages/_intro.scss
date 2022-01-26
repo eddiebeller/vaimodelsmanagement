@@ -1,0 +1,74 @@
+@use '../abstracts/mixins' as *;
+
+.intro header {
+  background-color: transparent;
+}
+.intro main {
+  margin-top: 0;
+}
+.intro footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: transparent;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../assets/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  @include mq(md) {
+    background-position: 65% 50%;
+  }
+  &__text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .cta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    margin-bottom: 35px;
+    @include mq(md) {
+      margin-bottom: 15px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__link {
+      transition: all 0.35s ease;
+      @include mq(md) {
+        position: absolute;
+        right: 0;
+        bottom: -0.5rem;
+      }
+      &:hover {
+        transform: translateX(10px);
+      }
+    }
+    p {
+      font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
+      color: var(--clr-primary-black);
+      font-weight: 700;
+      line-height: 1;
+      @include mq(md) {
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+    &__heading {
+      color: var(--clr-primary-white);
+      font-weight: 700;
+      font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+      @include mq(md) {
+        margin-top: 0;
+        line-height: 1;
+      }
+    }
+  }
+}

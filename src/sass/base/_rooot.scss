@@ -1,10 +1,30 @@
+
 :root {
-	--clr-primary-white: hsl(0, 0%, 100%);
-	--clr-primary-black: hsl(0, 0%, 18%);
-	--clr-hover: hsl(0, 0%, 77%);
-	--fz-large: 4.5rem;
-	--fz-medium-large: 1.5rem;
-	--fz-default: 1.125rem;
-	--fz-medium: 1rem;
-	--fz-small: 0.875rem;
+  --clr-primary-white: hsl(0, 0%, 100%);
+  --clr-primary-black: hsl(0, 0%, 18%);
+  --clr-accent: hsl(303, 66%, 60%);
+  --clr-accent-alpha: hsl(303, 66%, 60%, 0.2);
+
+  --ff: 'Be Vietnam Pro', sans-serif;
+
+  //72px
+  --fz-xl: 4.5rem;
+
+  //24px
+  --fz-lg: 1.5rem;
+
+  //20px
+  --fz-md: 1.25rem;
+
+  //18px
+  --fz-default: 1.125rem;
+
+  //16px
+  --fz-sm: 1rem;
+
+  //14px
+  --fz-xs: 0.875rem;
+}
+::selection {
+  background-color: var(--clr-accent-alpha);
 }
