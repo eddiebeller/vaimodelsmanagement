@@ -1,7 +1,11 @@
 @use '../abstracts/mixins' as *;
 .socials {
   position: fixed;
-  inset: auto 3.5rem 4rem auto;
+  // inset: auto 3.5rem 4rem auto;
+  inset: auto 3% 4rem auto;
+  @include mq(lg) {
+    inset: auto 1rem 4rem auto;
+  }
   &__list {
     display: flex;
     flex-direction: column;

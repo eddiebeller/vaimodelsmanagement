@@ -11,6 +11,9 @@ body {
     overflow: hidden;
   }
 }
+section {
+  height: 100%;
+}
 main {
   width: 100%;
   @include mq(sm) {

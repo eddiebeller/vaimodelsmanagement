@@ -8,25 +8,9 @@
     justify-content: center;
     max-width: 1420px;
     height: 100%;
-    padding-top: 2.2em;
-    padding-bottom: 4.375em;
     margin: 0 auto;
     @include mq(sm) {
       padding: 1em 0;
-    }
-  }
-  &__subheading {
-    margin: 0;
-    font-style: normal;
-    font-weight: bold;
-    font-size: var(--fz-default);
-    line-height: 1;
-    text-transform: uppercase;
-    @include mq(md) {
-      font-size: 1em;
-    }
-    @include mq(sm) {
-      font-size: 0.8em;
     }
   }
   &__heading {
@@ -52,20 +36,11 @@
     @include mq(sm) {
       margin-bottom: 1em;
     }
-    @include mq(xs) {
-      font-size: var(--fz-small);
-    }
     p {
-      font-size: 1.125rem;
+      font-size: clamp(var(--fz-xs), 2.2vw, var(--fz-default));
       text-transform: uppercase;
       font-weight: 300;
       margin: 0;
-      @include mq(md) {
-        font-size: var(--fz-default);
-      }
-      @include mq(xs) {
-        font-size: var(--fz-small);
-      }
     }
   }
   .carusel {

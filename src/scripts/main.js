@@ -22,18 +22,19 @@ $(document).ready(function () {
       },
 
       {
-        breakpoint: 769,
+        breakpoint: 811,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
-          centerPadding: "60px",
+          centerPadding: "40px",
           centerMode: true,
         },
       },
     ],
   });
 });
+
 $(window).scroll(function () {
   let scroll = $(window).scrollTop();
 

@@ -4,7 +4,6 @@
   width: 100%;
   min-height: 60px;
   background: transparent;
-  padding-block: 1rem;
   @include mq(md) {
     min-height: auto;
   }
@@ -20,6 +19,9 @@
     @include mq(md) {
       grid-template-columns: 1fr;
       place-items: center;
+    }
+    @include mq(sm) {
+      place-items: flex-start;
     }
   }
   .email {

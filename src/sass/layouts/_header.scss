@@ -42,14 +42,14 @@
     @include mq(md) {
       width: 240px;
     }
-    @include mq(sm) {
-      width: 200px;
-    }
+    // @include mq(sm) {
+    //   width: 200px;
+    // }
   }
 }
 .nav {
   justify-self: end;
-  @include mq(xs) {
+  @include mq(sm) {
     display: none;
   }
   &__list {

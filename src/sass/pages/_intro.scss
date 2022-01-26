@@ -19,6 +19,9 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  @include mq(md) {
+    background-position: 65% 50%;
+  }
   &__text {
     height: 100%;
     display: flex;
@@ -32,22 +35,40 @@
     gap: 20px;
     position: relative;
     margin-bottom: 35px;
+    @include mq(md) {
+      margin-bottom: 15px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
     &__link {
       transition: all 0.35s ease;
+      @include mq(md) {
+        position: absolute;
+        right: 0;
+        bottom: -0.5rem;
+      }
       &:hover {
         transform: translateX(10px);
       }
     }
     p {
-      font-size: 24px;
+      font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
       color: var(--clr-primary-black);
       font-weight: 700;
+      line-height: 1;
+      @include mq(md) {
+        width: 100%;
+        margin-bottom: 0;
+      }
     }
     &__heading {
       color: var(--clr-primary-white);
       font-weight: 700;
-      font-size: 64px;
-      line-height: 71px;
+      font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+      @include mq(md) {
+        margin-top: 0;
+        line-height: 1;
+      }
     }
   }
 }
